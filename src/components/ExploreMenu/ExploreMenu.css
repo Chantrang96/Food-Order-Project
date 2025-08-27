@@ -1,0 +1,47 @@
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.explore-menu h2 {
+  color: #8ec63f;
+  font-weight: 600;
+}
+.explore-menu-text {
+  max-width: 60%;
+  color: #555555;
+  font-weight: 300;
+}
+.explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  margin: 20px 0px;
+}
+.explore-menu-list-category img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.explore-menu-list-category p {
+  margin-top: 10px;
+  color: #717070;
+  cursor: pointer;
+  font-size: large;
+}
+.explore-menu hr {
+  margin: 10px 0px;
+  height: 2px;
+  background-color: #555555;
+  border: none;
+}
+.explore-menu-list-category .active {
+  border: 4px solid #8ec63f;
+  padding: 2px;
+}

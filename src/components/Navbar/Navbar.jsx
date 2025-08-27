@@ -15,25 +15,25 @@ const Navbar = () => {
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
-          Home
+          Trang Chủ
         </li>
         <li
           onClick={() => setMenu("our-menu")}
           className={menu === "our-menu" ? "active" : ""}
         >
-          Our Menu
+          Thực Đơn
         </li>
         <li
           onClick={() => setMenu("download-app")}
           className={menu === "download-app" ? "active" : ""}
         >
-          Download app
+          Ứng dụng điện thoại
         </li>
         <li
           onClick={() => setMenu("contact-us")}
           className={menu === "contact-us" ? "active" : ""}
         >
-          Contact us
+          Liên hệ
         </li>
       </ul>
       <div className="navbar-right">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <img src={BasketIcon} alt="" width="30" height="30" />
           <div className="dot"></div>
         </div>
-        <button>sign in</button>
+        <button>Đăng nhập</button>
       </div>
     </div>
   );
