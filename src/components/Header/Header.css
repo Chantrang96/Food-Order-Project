@@ -25,9 +25,12 @@
 .header-contents button {
   border: none;
   color: #555555;
-  font-weight: 500;
+  font-weight: 800;
   padding: 1vw 2.3vw;
   background-color: #deebc8;
   font-size: max(1vw, 13px);
   border-radius: 50px;
+}
+.header-contents p {
+  font-weight: 700;
 }

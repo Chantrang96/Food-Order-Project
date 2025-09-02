@@ -4,7 +4,7 @@ import { category_list } from "../../assets/Assets";
 const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h2>Khám phá thực đơn của chúng tôi</h2>
+      <h1>Khám phá thực đơn của chúng tôi</h1>
       <p className="explore-menu-text">
         Hãy cùng thưởng thức thực đơn đa dạng với những món bún, mì, miến được
         chế biến tươi ngon mỗi ngày, mang đậm hương vị truyền thống kết hợp cùng

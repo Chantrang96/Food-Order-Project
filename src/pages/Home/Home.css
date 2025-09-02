@@ -1,0 +1,31 @@
+.home-slide {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 10px;
+}
+
+.food-item {
+  max-width: 320px;
+  width: 100%;
+}
+.food-item-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.home .food-item .add,
+.home .food-item-counter {
+  display: none !important;
+}
+
+.home-slide {
+  padding: 0 8px;
+}
+
+.ant-carousel .slick-slide > div {
+  padding: 0 8px;
+}
+.home-title {
+  margin-bottom: 30px;
+}

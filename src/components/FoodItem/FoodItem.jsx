@@ -3,7 +3,7 @@ import "./FoodItem.css";
 import addIcon from "../../assets/add_icon.png";
 import removeIcon from "../../assets/remove_icon.png";
 
-const FoodItem = ({ id, name, price, description, image }) => {
+const FoodItem = ({ name, price, description, image }) => {
   const [itemCount, setItemCount] = useState(0);
 
   return (

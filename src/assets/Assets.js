@@ -69,7 +69,7 @@ export const food_list = [
     name: "Phở gà",
     image: Food_2_Pho_ga,
     price: "40.000 VND",
-    description: "Phở gà thơm ngon, thanh mát.",
+    description: "Phở gà thơm ngon, thanh mát, béo ngậy.",
     category: "Phở",
   },
   {
@@ -85,7 +85,7 @@ export const food_list = [
     name: "Phở gà trộn",
     image: Food_4_Pho_ga_tron,
     price: "45.000 VND",
-    description: "Phở gà trộn đậm vị, dễ ăn.",
+    description: "Phở gà trộn đậm vị, dễ ăn, giải nhiệt.",
     category: "Phở",
   },
 
@@ -110,7 +110,7 @@ export const food_list = [
     name: "Bún chả",
     image: Food_7_BunCha,
     price: "45.000 VND",
-    description: "Bún chả Hà Nội truyền thống.",
+    description: "Bún chả Hà Nội truyền thống với nước chấm đậm đà.",
     category: "Bún",
   },
   {
@@ -118,7 +118,7 @@ export const food_list = [
     name: "Bún trộn",
     image: Food_8_BunTron,
     price: "40.000 VND",
-    description: "Bún trộn rau củ, thanh mát.",
+    description: "Bún trộn rau củ, thanh mát, giải nhiệt mùa hè.",
     category: "Bún",
   },
 
@@ -127,7 +127,7 @@ export const food_list = [
     name: "Mỳ gà tần",
     image: Food_9_MyGaTan,
     price: "60.000 VND",
-    description: "Mỳ gà tần bổ dưỡng, thơm ngon.",
+    description: "Mỳ gà tần bổ dưỡng, thơm ngon, đặc sản.",
     category: "Mỳ",
   },
   {
@@ -160,7 +160,7 @@ export const food_list = [
     name: "Miến ngan",
     image: Food_13_MienNgan,
     price: "50.000 VND",
-    description: "Miến ngan nước dùng đậm vị.",
+    description: "Miến ngan nước dùng đậm vị, thịt ngan béo chắc.",
     category: "Miến",
   },
   {
@@ -193,7 +193,7 @@ export const food_list = [
     name: "Khoai lang chiên",
     image: Food_17_KhoaiLangChien,
     price: "30.000 VND",
-    description: "Khoai lang chiên ngọt giòn.",
+    description: "Khoai lang chiên ngọt, giòn và bùi.",
     category: "Đồ chiên",
   },
   {
@@ -209,7 +209,7 @@ export const food_list = [
     name: "Ngô chiên",
     image: Food_19_NgoChien,
     price: "30.000 VND",
-    description: "Ngô chiên bơ béo ngậy.",
+    description: "Ngô chiên bơ béo ngậy thơm lừng.",
     category: "Đồ chiên",
   },
   {
@@ -226,7 +226,7 @@ export const food_list = [
     name: "Rau củ quả luộc",
     image: Food_21_RauCuQuaLuoc,
     price: "35.000 VND",
-    description: "Rau củ quả luộc thanh đạm.",
+    description: "Rau củ quả luộc thanh đạm, giải nhiệt mùa hè.",
     category: "Món rau",
   },
   {

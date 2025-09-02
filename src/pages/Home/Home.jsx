@@ -1,17 +1,42 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import Header from "../../components/Header/Header";
-import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
-import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
+import StoreContext from "../../components/Context/StoreContext";
+import { Carousel } from "antd";
+import FoodItem from "../../components/FoodItem/FoodItem";
 
 const Home = () => {
-  const [category, setCategory] = useState("All");
-
+  const { food_list } = useContext(StoreContext);
+  const sliderSettings = {
+    arrows: true,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   return (
-    <div>
+    <div className="home">
       <Header />
-      <ExploreMenu category={category} setCategory={setCategory} />
-      <FoodDisplay category={category} />
+      <h2 className="home-title">Món ăn nổi bật</h2>
+
+      <Carousel {...sliderSettings}>
+        {food_list.map((item, index) => (
+          <div key={item.id ?? index} className="home-slide">
+            <FoodItem
+              id={item.id}
+              name={item.name}
+              price={item.price}
+              description={item.description}
+              image={item.image}
+              category={item.category}
+            />
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

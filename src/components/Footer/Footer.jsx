@@ -12,10 +12,8 @@ const Footer = () => {
         <div className="div footer-content-left">
           <img className="footer-logo" src={logo} alt="" />
           <p>
-            lorem ipsum is simply dummy text of the printing and typesetting
-            industry. lorem ipsum has been the industry's standard dummy text
-            over since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book
+            🍜 Fooba – Ứng dụng đặt món ăn nhanh chóng và tiện lợi. Luôn mang
+            đến cho bạn hương vị tươi ngon mỗi ngày!
           </p>
           <div className="footer-social-icons">
             <img src={facebook_icon} alt="" />
