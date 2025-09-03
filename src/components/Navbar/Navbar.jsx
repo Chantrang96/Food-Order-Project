@@ -26,13 +26,14 @@ const Navbar = () => {
             Thực Đơn
           </NavLink>
         </li>
+        
         <li>
           <NavLink
-            to="/download"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            App điện thoại
-          </NavLink>
+            to="/AppDownload"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            App điện thoại
+          </NavLink>
         </li>
 
         <li>
