@@ -49,3 +49,13 @@
   width: 100px;
   height: 100px;
 }
+@media (max-width:750) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+}
