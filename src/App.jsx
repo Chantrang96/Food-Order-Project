@@ -6,6 +6,7 @@ import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import Menu from "./pages/Menu/Menu";
+import DownloadApp from "./components/AppDownload/AppDownload";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/PlaceOrder" element={<PlaceOrder />} />
           <Route path="/Menu" element={<Menu />} />
+          <Route path="/DownloadApp" element={<DownloadApp />} />
         </Routes>
       </div>
       <Footer />
