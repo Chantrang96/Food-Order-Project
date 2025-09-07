@@ -1,14 +1,18 @@
-import React from "react";
+import { React, useContext } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/Logo.jpg";
 import SearchIcon from "../../assets/search-icon.png";
 import BasketIcon from "../../assets/basket-icon.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import StoreContext from "../Context/StoreContext";
 
 const Navbar = () => {
+  const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <div className="navbar">
-      <img src={Logo} className="logo" />
+      <Link to="/">
+        <img src={Logo} className="logo" />
+      </Link>
       <ul className="navbar-menu">
         <li>
           <NavLink
@@ -48,8 +52,10 @@ const Navbar = () => {
       <div className="navbar-right">
         <img src={SearchIcon} alt="" width="30" height="30" />
         <div className="navbar-search-icon">
-          <img src={BasketIcon} alt="" width="30" height="30" />
-          <div className="dot"></div>
+          <Link to="/Cart">
+            <img src={BasketIcon} alt="" width="30" height="30" />
+          </Link>
+          <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
         <button>Đăng nhập</button>
       </div>
