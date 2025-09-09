@@ -6,7 +6,7 @@ import BasketIcon from "../../assets/basket-icon.png";
 import { Link, NavLink } from "react-router-dom";
 import StoreContext from "../Context/StoreContext";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <div className="navbar">
@@ -57,7 +57,7 @@ const Navbar = () => {
           </Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
-        <button>Đăng nhập</button>
+        <button onClick={()=>setShowLogin(true)}>Đăng nhập</button>
       </div>
     </div>
   );
