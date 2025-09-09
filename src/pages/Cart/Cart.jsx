@@ -21,7 +21,7 @@ const Cart = () => {
         </div>
         <br />
         <hr />
-        {food_list.map((item, index) => {
+        {food_list.map((item) => {
           if (cartItems[item._id] > 0) {
             return (
               <div>
@@ -61,7 +61,7 @@ const Cart = () => {
             <hr />
             <div className="cart-total-detail">
               <b>Tổng</b>
-              <b>{getTotalCartAmount() + 2} VND</b>
+              <b>{getTotalCartAmount() + 20000} VND</b>
             </div>
           </div>
           <button>Đi đến trang thanh toán</button>
