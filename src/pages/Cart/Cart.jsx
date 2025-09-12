@@ -3,10 +3,12 @@ import "./Cart.css";
 import StoreContext from "../../components/Context/StoreContext";
 import { food_list } from "../../assets/Assets";
 import removeIcon from "../../assets/remove_icon.png";
+import { useNavigate } from "react-router";
 
 const Cart = () => {
   const { cartItems, food_list, removeFromCart, getTotalCartAmount } =
     useContext(StoreContext);
+  const navigate = useNavigate ();
 
   return (
     <div className="cart">
@@ -56,15 +58,15 @@ const Cart = () => {
             <hr />
             <div className="cart-total-detail">
               <p>Phí vận chuyển</p>
-              <p>{20000} VND</p>
+              <p>{getTotalCartAmount()===0?0:20000} VND</p>
             </div>
             <hr />
             <div className="cart-total-detail">
               <b>Tổng</b>
-              <b>{getTotalCartAmount() + 20000} VND</b>
+              <b>{getTotalCartAmount()===0?0:getTotalCartAmount() + 20000} VND</b>
             </div>
           </div>
-          <button>Đi đến trang thanh toán</button>
+          <button onClick={()=>navigate('/order')}>Đi đến trang thanh toán</button>
         </div>
         <div className="cart-promocode">
           <div>
