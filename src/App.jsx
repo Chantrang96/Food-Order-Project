@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/PlaceOrder" element={<PlaceOrder />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/DownloadApp" element={<DownloadApp />} />
+          <Route path="/order" element={<PlaceOrder />} />
         </Routes>
       </div>
       <Footer />
