@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "fullname": "hieu"
+    },
+    {
+      "id": "e628",
+      "email": "hieu@gmail.com",
+      "password": "hieu",
+      "fullname": "hieu"
+    },
+    {
+      "id": "24ac",
+      "email": "hieu0810@gmail.com",
+      "password": "123",
+      "fullname": "hieu"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "Post 3",
+      "userId": 2
+    }
+  ]
+}

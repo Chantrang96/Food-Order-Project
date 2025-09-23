@@ -5,11 +5,14 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import StoreContextProvider from "./components/Context/StoreContextProvider";
 import "antd/dist/reset.css";
+import { UserContextProvider } from "./components/Context/UserContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <StoreContextProvider>
-      <App />
-    </StoreContextProvider>
+    <UserContextProvider>
+      <StoreContextProvider>
+        <App />
+      </StoreContextProvider>
+    </UserContextProvider>
   </BrowserRouter>
 );
