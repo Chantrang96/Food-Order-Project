@@ -5,9 +5,11 @@ import SearchIcon from "../../assets/search-icon.png";
 import BasketIcon from "../../assets/basket-icon.png";
 import { Link, NavLink } from "react-router-dom";
 import StoreContext from "../Context/StoreContext";
+import { useUser } from "../Context/UserContext";
 
 const Navbar = ({setShowLogin}) => {
   const { getTotalCartAmount } = useContext(StoreContext);
+  const {user, logout} = useUser()
   return (
     <div className="navbar">
       <Link to="/">
@@ -57,7 +59,9 @@ const Navbar = ({setShowLogin}) => {
           </Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
-        <button onClick={()=>setShowLogin(true)}>Đăng nhập</button>
+        {user ?<><span>Chào {user.fullname}</span> <button onClick={logout}>Đăng xuất</button></>:
+            <button onClick={()=>setShowLogin(true)}>Đăng nhập</button>
+        }
       </div>
     </div>
   );
