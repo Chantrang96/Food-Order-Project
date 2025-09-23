@@ -3,10 +3,10 @@ import { food_list } from "../../assets/Assets";
 import { useState, useEffect } from "react";
 
 const StoreContextProvider = (props) => {
-  const [cartItems, setCartItems] = useState(()=>{
-    const cart = localStorage.getItem('cart')
-    if(cart) return JSON.parse(cart)
-    return {}
+  const [cartItems, setCartItems] = useState(() => {
+    const cart = localStorage.getItem("cart");
+    if (cart) return JSON.parse(cart);
+    return {};
   });
   const addToCart = (itemId) => {
     if (!cartItems[itemId]) {
@@ -30,9 +30,9 @@ const StoreContextProvider = (props) => {
     }
     return totalAmount;
   };
-  useEffect(()=>{
-    localStorage.setItem('cart', JSON.stringify(cartItems))
-  },[cartItems])
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const contextValue = {
     food_list,
